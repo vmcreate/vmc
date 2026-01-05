@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vmcreate.github.io/vmc/sitemap.xml
