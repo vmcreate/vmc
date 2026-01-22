@@ -126,10 +126,25 @@ header nav ul li a:hover{
    
 }
 .hero-content .dugmad-za-dalje a:nth-of-type(2){
-    background-color: white;
-    color: black;
-    border:   .5px #e2e8f0 solid;
+    display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;              /* tekst u beloj boji */
+  background: linear-gradient(90deg, #ff7a18, #af002d); /* gradient dugmeta */
+  border: none;
+  border-radius: 50px;      /* okrugli krajevi */
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
    
+}
+.hero-content .dugmad-za-dalje a:nth-of-type(2):hover{
+     transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #af002d, #ff7a18); /* obrnut gradient na hover */
 }
 .hero-content i{
      width: 48px;
@@ -340,6 +355,47 @@ background: linear-gradient(90deg,rgba(83, 42, 155, 1) 0%, rgba(117, 87, 199, 1)
     padding: 5px 10px;
     color: white;
     border-radius: 7px;
+}
+/* slider */
+.clients-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.clients-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.clients-swiper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.clients-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 120px; /* fiksna visina za sve slideove */
+
+}
+
+.clients-swiper .swiper-slide img {
+ 
+  opacity: 0.8;
+  transition: transform 0.3s, opacity 0.3s;
+   max-height: 100%;      /* prilagođava se visini slide-a */
+  max-width: 100%;       /* ne prelazi širinu slide-a */
+  object-fit: contain;   /* zadržava proporcije logoa */
+  display: block;
+}
+
+.clients-swiper .swiper-slide img:hover {
+  transform: scale(0.9);
+  opacity: 1;
 }
 
 /* CONTANCT */

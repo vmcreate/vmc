@@ -24,6 +24,10 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vmcreate.github.io/vmc/">
 <link rel="icon" href="https://avatars.githubusercontent.com/u/29626952?s=400&u=2beb667dddd0a75223b0102e814d81d7bfd398cb&v=4" type="image/x-icon">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 
 </head>
 <script type="application/ld+json">
@@ -65,7 +69,7 @@
             <h1>Pozdrav, ja sam <span>Viktor Molnar</span> </h1>
             <h2>Full-stack web developer — gradim moderna, brza i funkcionalna web rešenja koja imaju stvarni uticaj.</h2>
             <div class="dugmad-za-dalje">
-                <a href="#work">Moji projekti</a><a href="#contact">Kontaktiraj me</a>
+                <a href="#work">Moji projekti</a><a href="#contact">Pošalji upit odmah</a>
             </div>
        <a href="#work"><i class="fa-solid fa-arrow-down"></i></a>
 
@@ -209,6 +213,26 @@
                 
             </div>
         </section>
+        <section id="clients" class="clients-section">
+  <div class="container">
+    <h2>Naši zadovoljni klijenti</h2>
+
+    <!-- Swiper -->
+    <div class="swiper clients-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./assets/jj-hera.png" alt="Klijent 1"></div>
+        <div class="swiper-slide"><img src="./assets/obki.png" alt="Klijent 2"></div>
+        <div class="swiper-slide"><img src="./assets/rusko-selo.png" alt="Klijent 3"></div>
+        <div class="swiper-slide"><img src="./assets/pgk.png" alt="Klijent 4"></div>
+        <div class="swiper-slide"><img src="./assets/rtox.png" alt="Klijent 5"></div>
+         <div class="swiper-slide"><img src="./assets/kzm.png" alt="Klijent 6"></div>
+          <div class="swiper-slide"><img src="./assets/ln.png" alt="Klijent 7"></div>
+                    <div class="swiper-slide"><img src="./assets/ncentar.png" alt="Klijent 8"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
         <section id="contact">
             <div class="contact-content">
                 <div class="naslov-contact">
@@ -238,6 +262,7 @@ Slobodno mi se javite i razgovaraćemo o tome kako mogu da vam pomognem da svoju
             </div>
           
         </section>
+
           <div class="social">
                 <div class="social-wrapp">
                         <div class="social-item">
@@ -257,5 +282,25 @@ Slobodno mi se javite i razgovaraćemo o tome kako mogu da vam pomognem da svoju
                 </div>
                 <div class="odjava">© 2015 Made by Viktor Molnar</div>
             </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper(".clients-swiper", {
+  loop: true,                  // BESKONAČNI loop
+  slidesPerView: 3,            // koliko se vidi odjednom na desktopu
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2000,               // skrolovanje na svaka 2 sekunde
+    disableOnInteraction: false,
+  },
+  loopFillGroupWithBlank: true, // popunjava prazne grupacije ako ih fali
+  breakpoints: {               // responsive
+    320: { slidesPerView: 1 }, 
+    480: { slidesPerView: 2 }, 
+    768: { slidesPerView: 3 }, 
+    1024: { slidesPerView: 4 },
+  },
+});
+
+</script>
 </body>
 </html>
